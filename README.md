@@ -1,6 +1,34 @@
 # maven-version-plugin
 Generate Release Version Information for Maven Project
 
+# Pom info Example
+
+```
+            <plugin>
+               <groupId>caofangkun</groupId>
+               <artifactId>maven-version-plugin</artifactId>
+               <executions>
+                 <execution>
+                   <id>version-info</id>
+                   <phase>generate-resources</phase>
+                   <goals>
+                     <goal>version-info</goal>
+                   </goals>
+                   <configuration>
+                   <source>
+                      <directory>${basedir}/src/</directory>
+                      <includes>
+                        <include>src/**/*.java</include>
+                        <include>clj/**/*.clj</include>
+                      </includes>
+                  </source>
+                 </configuration>
+               </execution>
+             </executions>
+          </plugin>
+
+```
+
 # Example Usage 
 
 ```
