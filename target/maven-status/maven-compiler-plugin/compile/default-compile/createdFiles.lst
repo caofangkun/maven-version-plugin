@@ -1,0 +1,6 @@
+maven/version/plugin/util/CommandExec.class
+maven/version/plugin/versioninfo/VersionInfoMojo$1.class
+maven/version/plugin/versioninfo/VersionInfoMojo$2.class
+maven/version/plugin/util/CommandExec$OutputBufferThread.class
+maven/version/plugin/versioninfo/VersionInfoMojo$SCM.class
+maven/version/plugin/versioninfo/VersionInfoMojo.class
