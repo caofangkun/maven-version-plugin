@@ -35,8 +35,8 @@
         </resources>
   <plugins>
             <plugin>
-               <groupId>caofangkun</groupId>
-               <artifactId>maven-version-plugin</artifactId>
+               <groupId>com.github.caofangkun</groupId>
+               <artifactId>version-maven-plugin</artifactId>
                <executions>
                  <execution>
                    <id>version-info</id>
