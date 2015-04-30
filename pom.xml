@@ -23,7 +23,7 @@
   <artifactId>version-maven-plugin</artifactId>
   <packaging>maven-plugin</packaging>
   <name>version-maven-plugin</name>
-  <version>0.1</version>
+  <version>0.1-SNAPSHOT</version>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.dependency.version>3.0</maven.dependency.version>
