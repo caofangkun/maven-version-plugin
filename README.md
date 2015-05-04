@@ -1,3 +1,5 @@
+Master Branch: [![Travis CI](https://travis-ci.org/caofangkun/version-maven-plugin.svg?branch=master)](https://travis-ci.org/caofangkun/version-maven-plugin)
+
 # version-maven-plugin
 Generate Release Version Information for Maven Project
 
