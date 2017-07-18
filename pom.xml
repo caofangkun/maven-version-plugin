@@ -78,6 +78,15 @@
 	</distributionManagement>
 
 	<build>
+		<resources>
+			<resource>
+				<directory>${basedir}/src/main/resources</directory>
+				<includes>
+					<include>version-info.properties</include>
+				</includes>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
 		<plugins>
 			<plugin>
 				<groupId>org.sonatype.plugins</groupId>
@@ -141,6 +150,36 @@
 					<useReleaseProfile>false</useReleaseProfile>
 					<releaseProfiles>release</releaseProfiles>
 					<goals>deploy</goals>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>com.github.caofangkun</groupId>
+				<artifactId>version-maven-plugin</artifactId>
+				<version>${project.version}</version>
+				<executions>
+					<execution>
+						<id>version</id>
+						<phase>generate-resources</phase>
+						<goals>
+							<goal>version</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>clean</id>
+						<phase>clean</phase>
+						<goals>
+							<goal>clean</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<source>
+						<directory>${basedir}/src/</directory>
+						<includes>
+							<include>src/**/*.java</include>
+						</includes>
+					</source>
 				</configuration>
 			</plugin>
 		</plugins>
