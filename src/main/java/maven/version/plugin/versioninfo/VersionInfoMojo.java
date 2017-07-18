@@ -42,7 +42,7 @@ import org.apache.maven.plugins.annotations.Parameter;
 import org.apache.maven.project.MavenProject;
 import org.codehaus.plexus.util.FileUtils;
 
-@Mojo(name = "version-info")
+@Mojo(name = "version")
 public class VersionInfoMojo extends AbstractMojo {
 
   @Parameter(defaultValue = "${project}")
