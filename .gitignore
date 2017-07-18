@@ -1,18 +1,22 @@
-/bin/
-/target/
-.classpath
 .project
-/.settings/
-
-*.class
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.ear
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+.classpath
+.wtpmodules
+.settings
+.svn/
+.project
+.settings/
+target/
+**/.project
+**/.classpath
+**/.settings/
+**/target/
+**/dependency-reduced-pom.xml
+pom.xml.next
+pom.xml.releaseBackup
+pom.xml.tag
+release.properties
+*.iml
+.idea
+*.swp
+*.ipr
+*.iws
