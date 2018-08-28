@@ -153,35 +153,6 @@
 				</configuration>
 			</plugin>
 
-			<plugin>
-				<groupId>com.github.caofangkun</groupId>
-				<artifactId>version-maven-plugin</artifactId>
-				<version>${project.version}</version>
-				<executions>
-					<execution>
-						<id>version</id>
-						<phase>generate-resources</phase>
-						<goals>
-							<goal>version</goal>
-						</goals>
-					</execution>
-					<execution>
-						<id>clean</id>
-						<phase>clean</phase>
-						<goals>
-							<goal>clean</goal>
-						</goals>
-					</execution>
-				</executions>
-				<configuration>
-					<source>
-						<directory>${basedir}/src/</directory>
-						<includes>
-							<include>src/**/*.java</include>
-						</includes>
-					</source>
-				</configuration>
-			</plugin>
 		</plugins>
 	</build>
 
